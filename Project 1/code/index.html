@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍳 Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with logo and title -->
+    <header class="header">
+        <div class="container">
+            <h1>🍳 Recipe Finder</h1>
+            <p>Discover recipes from TheMealDB API</p>
+        </div>
+    </header>
+
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <div class="container">
+            <button id="allBtn" class="nav-btn active">All Recipes</button>
+            <button id="beefBtn" class="nav-btn">Beef</button>
+            <button id="chickenBtn" class="nav-btn">Chicken</button>
+            <button id="dessertBtn" class="nav-btn">Dessert</button>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <main class="main">
+        <div class="container">
+            <!-- Search section -->
+            <div class="search-section">
+                <input type="text" id="searchInput" placeholder="Search recipes...">
+                <button id="randomBtn">🎲 Random</button>
+            </div>
+
+            <!-- Results container -->
+            <div id="recipesGrid" class="recipes-grid">
+                <div class="empty-state">
+                    <p>🔍 Search recipes or click a category</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Recipe Finder | Powered by TheMealDB API</p>
+        </div>
+    </footer>
+
+    <script src="style.js"></script>
+</body>
+</html>
